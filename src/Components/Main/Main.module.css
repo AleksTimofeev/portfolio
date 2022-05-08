@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 80%;
+}
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+.greeting {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: aqua;
+}
+.greeting .inner {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.skills {
+  background: aquamarine;
+}
+.projects {
+  background: cadetblue;
+}
+.remoteWork {
+  background: chartreuse;
+}
+.sectionTitle {
+  margin: 40px 0;
+}
+.remoteWork button {
+  margin-bottom: 40px;
+}
+.remoteWorkInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts {
+  background: #52b0e2;
+}

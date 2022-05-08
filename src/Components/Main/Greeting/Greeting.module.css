@@ -1,0 +1,15 @@
+.text {
+  padding: 0 40px;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+.text span {
+  white-space: nowrap;
+}
+
+.photoContainer {
+  min-width: 300px;
+}
+.photoContainer img {
+  width: 100%;
+}

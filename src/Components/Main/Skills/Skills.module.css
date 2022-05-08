@@ -1,0 +1,25 @@
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  margin: 40px 0;
+}
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skillsItem {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.skillsItem p {
+  text-align: justify;
+}

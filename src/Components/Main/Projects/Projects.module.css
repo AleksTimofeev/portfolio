@@ -1,0 +1,29 @@
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  margin: 40px 0;
+}
+.projectsList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projectsItem {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  border: 1px solid black;
+}
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
