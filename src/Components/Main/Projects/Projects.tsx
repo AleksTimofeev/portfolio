@@ -29,8 +29,8 @@ const Projects = () => {
     <>
       <h2 className={styles.title}>My projects</h2>
       <div className={styles.projectsList}>
-        {dataProjects.map(item => (
-          <div className={styles.projectsItem}>
+        {dataProjects.map((item, i) => (
+          <div key={i} className={styles.projectsItem}>
             <Project title={item.title} description={item.description} projectUrl={item.projectUrl} imgUrl={item.imgUrl}/>
           </div>
         ))}

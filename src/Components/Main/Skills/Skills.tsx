@@ -17,8 +17,8 @@ const Skills = () => {
     <>
       <h2 className={styles.title}>My skills</h2>
       <div className={styles.skillsList}>
-        {dataSkills.map(item => (
-          <div className={styles.skillsItem}>
+        {dataSkills.map((item, i) => (
+          <div key={i} className={styles.skillsItem}>
             <Skill icon={item.icon} title={item.title} text={item.text}/>
           </div>
         ))}

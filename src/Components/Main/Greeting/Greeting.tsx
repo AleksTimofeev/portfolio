@@ -6,8 +6,8 @@ const Greeting = () => {
   return (
     <>
       <div className={styles.text}>
-        <h1>Hello.<br />My name is <span>Aleksandr Timofeev.</span></h1>
-        <p>I am fronted-developer</p>
+        <h1 className={styles.title}>Hello.<br />My name is <span>Aleksandr Timofeev.</span></h1>
+        <p>I am a fronted-developer</p>
       </div>
       <div className={styles.photoContainer}>
         <img src={avatar} alt={'My photo'}/>

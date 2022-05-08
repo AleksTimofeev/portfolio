@@ -27,3 +27,32 @@
   background-position: center;
   height: 250px;
 }
+@media (max-width: 768px) {
+  .projectsList {}
+  .projectsItem {
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  .imgContainer {
+    height: 200px;
+  }
+}
+@media (max-width: 620px) {
+  .projectsList {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectsItem {
+    width: 80%;
+  }
+  .imgContainer {
+    height: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .projectsList {}
+  .projectsItem {}
+  .imgContainer {
+    height: 200px;
+  }
+}

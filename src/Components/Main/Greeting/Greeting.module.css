@@ -1,6 +1,5 @@
 .text {
   padding: 0 40px;
-  min-width: 300px;
   box-sizing: border-box;
 }
 .text span {
@@ -8,8 +7,32 @@
 }
 
 .photoContainer {
-  min-width: 300px;
+  width: 300px;
 }
 .photoContainer img {
   width: 100%;
+}
+@media (max-width: 1024px) {
+  .photoContainer {
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .text {
+    padding: 0 20px;
+  }
+  .title {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 480px) {
+  .photoContainer {
+    width: 80%;
+  }
+  .text {
+    text-align: center;
+  }
+  .title {
+    line-height: 3rem;
+  }
 }

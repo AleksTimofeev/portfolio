@@ -28,3 +28,13 @@
 .rights {
   align-self: flex-end;
 }
+@media (max-width: 768px) {
+  .list {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .list {
+    justify-content: space-between;
+  }
+}

@@ -52,3 +52,12 @@
 .contacts {
   background: #52b0e2;
 }
+@media (max-width: 480px) {
+  .greeting .container {
+    height: 100%;
+  }
+  .greeting .inner {
+    height: 100%;
+    flex-direction: column;
+  }
+}
