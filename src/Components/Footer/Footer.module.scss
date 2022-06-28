@@ -1,9 +1,12 @@
+@import "../Styles/variables.module.scss";
+
 .footer {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: darkslategray;
+  padding: 40px 0;
+  background: $darkBackground;
   color: white;
 }
 .container {
@@ -19,11 +22,12 @@
   width: 60%;
   display: flex;
   justify-content: space-around;
-  border: 1px solid black;
 }
 .listItem {
+  position: relative;
   padding: 10px 20px;
-  background: #52b0e2;
+  color: #fff;
+
 }
 .rights {
   align-self: flex-end;

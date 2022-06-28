@@ -1,0 +1,38 @@
+@import '../../Styles/variables.module';
+@import '../../Styles/mixins.module';
+
+.wrapper {
+  @include text;
+
+  a {
+    position: relative;
+    margin: 0 10px;
+    color: #5b5963;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 1px;
+      top: 110%;
+      left: 0;
+      background: $primaryColor;
+      transition: .3s;
+    }
+    &:hover::after{
+      width: 100%;
+      transition: .3s;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrapper a {
+    margin: 0;
+  }
+}

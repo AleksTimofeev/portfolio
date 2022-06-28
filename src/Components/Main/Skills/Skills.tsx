@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Skills.module.css'
+import styles from './Skills.module.scss'
 import Skill from "./Skill/Skill";
 export type SkillType = {
   icon: string
@@ -10,8 +10,11 @@ const Skills = () => {
   const dataSkills:Array<SkillType> = [
     {icon: '#', title: 'JavaScript', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
     {icon: '#', title: 'React', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Redux', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Toolkit', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
     {icon: '#', title: 'HTML', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
     {icon: '#', title: 'CSS', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'GIT', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
   ]
   return (
     <>

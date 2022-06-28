@@ -1,9 +1,10 @@
 import React from 'react';
-import styles from './Main.module.css'
+import styles from './Main.module.scss'
 import Greeting from "./Greeting/Greeting";
 import Skills from './Skills/Skills';
 import Projects from "./Projects/Projects";
 import Contacts from "./Contacts/Contacts";
+import Button from "../Elements/Button";
 
 const Main = () => {
   const data = {
@@ -16,21 +17,21 @@ const Main = () => {
   }
   return (
     <div className={styles.wrapper}>
-      <section className={`${styles.greeting}`}>
+      <section className={`${styles.greeting} ${styles.section}`}>
         <div className={styles.container}>
           <div className={styles.inner}>
             <Greeting/>
           </div>
         </div>
       </section>
-      <section className={`${styles.skills} ${styles.section}`}>
+      <section className={`${styles.section}`}>
         <div className={styles.container}>
           <div className={styles.inner}>
             <Skills/>
           </div>
         </div>
       </section>
-      <section className={`${styles.projects} ${styles.section}`}>
+      <section className={`${styles.section}`}>
         <div className={styles.container}>
           <div className={styles.inner}>
             <Projects/>
@@ -41,11 +42,11 @@ const Main = () => {
         <div className={styles.container}>
           <div className={styles.inner}>
             <h2 className={styles.sectionTitle}>Ready to work remotely</h2>
-            <button>Hire me</button>
+            <Button title={'Hire me'}/>
           </div>
         </div>
       </section>
-      <section className={`${styles.contacts} ${styles.section}`}>
+      <section className={`${styles.section}`}>
         <div className={styles.container}>
           <div className={styles.inner}>
             <Contacts/>

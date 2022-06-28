@@ -1,0 +1,95 @@
+@import '../../styles/mixins.module';
+@import "../../Styles/variables.module";
+
+.title {
+  @include text;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  padding: 10px 0 10px;
+
+  span {
+    font-weight: 700;
+    position: relative;
+    z-index: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 20px;
+      width: 100%;
+      z-index: -1;
+      background: $primaryColor;
+      opacity: 0.5;
+    }
+  }
+}
+
+.text {
+  padding: 0 40px;
+  box-sizing: border-box;
+  @include text;
+  font-size: 20px;
+
+  h3 {
+    margin: 0 0 5px;
+  }
+
+  p {
+    text-transform: uppercase;
+    margin: 15px 0 0;
+  }
+}
+
+.photoContainer {
+  min-width: 300px;
+  position: relative;
+
+  img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .imgBorder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    border: 10px solid $primaryColor;
+    transform: translate(10px, 7px);
+    z-index: 0;
+    opacity: .5;
+  }
+}
+
+@media (max-width: 900px) {
+  .photoContainer {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    padding: 0 20px;
+  }
+  .title {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .photoContainer {
+    width: 80%;
+  }
+  .text {
+    text-align: center;
+  }
+  .title {
+    line-height: 3rem;
+  }
+}

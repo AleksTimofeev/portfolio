@@ -1,0 +1,31 @@
+@import "../Styles/variables.module";
+@import "../Styles/mixins.module";
+
+.btn {
+  @include btn;
+  position: relative;
+  background: #fff;
+  z-index: 0;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    transition: .3s;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 2px;
+    left: 2px;
+    background: $primaryColor;
+    z-index: -1;
+    transition: .3s;
+  }
+  &:hover::after{
+    width: 100%;
+    transition: .3s;
+  }
+}

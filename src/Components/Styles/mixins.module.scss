@@ -1,0 +1,52 @@
+@import "variables.module";
+
+@mixin sectionTitle{
+  position: relative;
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  color: #5b5963;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 115%;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 1px;
+    background: $primaryColor;
+  }
+}
+@mixin cardTitle {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #5b5963;
+}
+@mixin text{
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: #5b5963;
+}
+@mixin btn {
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 12px 30px;
+  color: #5b5963;
+  border: 2px solid #f47a65;
+}
