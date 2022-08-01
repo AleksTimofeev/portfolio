@@ -50,6 +50,7 @@
 
   img {
     width: 100%;
+    max-width: 350px;
     position: relative;
     z-index: 2;
   }
@@ -74,6 +75,9 @@
 }
 
 @media (max-width: 768px) {
+  .photoContainer {
+    max-width: 200px;
+  }
   .text {
     padding: 0 20px;
   }

@@ -17,21 +17,21 @@ const Main = () => {
   }
   return (
     <div className={styles.wrapper}>
-      <section className={`${styles.greeting} ${styles.section}`}>
+      <section id={'about'} className={`${styles.greeting} ${styles.section}`}>
         <div className={styles.container}>
           <div className={styles.inner}>
             <Greeting/>
           </div>
         </div>
       </section>
-      <section className={`${styles.section}`}>
+      <section id={'skills'} className={`${styles.section}`}>
         <div className={styles.container}>
           <div className={styles.inner}>
             <Skills/>
           </div>
         </div>
       </section>
-      <section className={`${styles.section}`}>
+      <section id={'projects'} className={`${styles.section}`}>
         <div className={styles.container}>
           <div className={styles.inner}>
             <Projects/>
@@ -46,7 +46,7 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section className={`${styles.section}`}>
+      <section id={'contacts'} className={`${styles.section}`}>
         <div className={styles.container}>
           <div className={styles.inner}>
             <Contacts/>
