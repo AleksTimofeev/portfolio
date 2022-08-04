@@ -45,6 +45,10 @@
   @include sectionTitle;
 }
 
+.remoteWork .sectionTitle {
+  text-align: center;
+}
+
 @media (max-width: 480px) {
   .greeting .container {
     height: 100%;
@@ -52,5 +56,8 @@
   .greeting .inner {
     height: 100%;
     flex-direction: column-reverse;
+  }
+  .section {
+    padding: 20px 0;
   }
 }

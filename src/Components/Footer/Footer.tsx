@@ -12,7 +12,6 @@ const Footer = () => {
           <div className={styles.listItem}>003</div>
           <div className={styles.listItem}>004</div>
         </div>
-        <p className={styles.rights}>&#169; 2022 all rights reserved</p>
       </div>
     </footer>
   );

@@ -89,6 +89,12 @@
 
     .title {
       font-size: 1.2em;
+
+      span {
+        &::after {
+          height: 10px;
+        }
+      }
     }
   }
 }
