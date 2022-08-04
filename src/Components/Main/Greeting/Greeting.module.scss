@@ -45,7 +45,7 @@
 }
 
 .photoContainer {
-  min-width: 300px;
+  max-width: 250px;
   position: relative;
 
   img {
@@ -70,25 +70,33 @@
 
 @media (max-width: 900px) {
   .photoContainer {
-    min-width: 200px;
+    max-width: 200px;
   }
 }
 
 @media (max-width: 768px) {
   .photoContainer {
-    max-width: 200px;
+    max-width: 170px;
+
+    .imgBorder {
+      width: 94%;
+      height: 94%;
+      border: 6px solid #f77358;
+    }
   }
   .text {
     padding: 0 20px;
-  }
-  .title {
-    font-size: 1.2em;
+
+    .title {
+      font-size: 1.2em;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .photoContainer {
     width: 80%;
+    margin-bottom: 30px;
   }
   .text {
     text-align: center;
