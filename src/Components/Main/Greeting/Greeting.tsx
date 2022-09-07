@@ -8,7 +8,7 @@ const Greeting = () => {
       <div className={styles.text}>
         <h3>Hello</h3>
         <h1 className={styles.title}>I am <br/><span>Aleksandr Timofeev</span></h1>
-        <p>a fronted-developer</p>
+        <p>a front-end developer</p>
       </div>
       <div className={styles.photoContainer}>
         <img src={photo} alt={'My photo'}/>

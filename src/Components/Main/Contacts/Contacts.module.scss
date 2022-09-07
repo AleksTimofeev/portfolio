@@ -7,6 +7,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 500px;
   input {
     @include text;
@@ -39,6 +40,10 @@
       opacity: .5;
     }
   }
+}
+.button {
+  width: fit-content;
+  margin-top: 12px;
 }
 /*.form input:focus-visible, .form textarea:focus-visible {
   outline: none;

@@ -9,12 +9,24 @@ export type SkillType = {
 const Skills = () => {
   const dataSkills:Array<SkillType> = [
     {icon: '#', title: 'JavaScript', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'TypeScript', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
     {icon: '#', title: 'React', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
     {icon: '#', title: 'Redux', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
-    {icon: '#', title: 'Toolkit', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Redux-Thunk', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Redux-Toolkit', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'React-Router-Dom', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Formik', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Axios', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'HTTP / HTTPS', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Rest API', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Jest', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'StoryBook', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Postman', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Material UI', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Styled Components', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
     {icon: '#', title: 'HTML', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
-    {icon: '#', title: 'CSS', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
-    {icon: '#', title: 'GIT', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'CSS / SASS', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
+    {icon: '#', title: 'Git', text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
   ]
   return (
     <>
