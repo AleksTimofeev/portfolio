@@ -63,8 +63,8 @@ const Contacts = () => {
         <input onChange={handleChange} type={'text'} name={'name'} value={data.name} placeholder={'name...'} />
         <input onChange={handleChange} type={'email'} name={'email'} value={data.email} placeholder={'email...'} />
         <input onChange={handleChange} type={'phone'} name={'phone'} value={data.phone} placeholder={'phone...'} />
-        <input onChange={handleChange} type={'text'} name={'telegram'} value={data.telegram} placeholder={'telegram...'} />
-        <input onChange={handleChange} type={'text'} name={'linkedin'} value={data.linkedin} placeholder={'linkedin...'} />
+        {/*<input onChange={handleChange} type={'text'} name={'telegram'} value={data.telegram} placeholder={'telegram...'} />*/}
+        {/*<input onChange={handleChange} type={'text'} name={'linkedin'} value={data.linkedin} placeholder={'linkedin...'} />*/}
         <textarea onChange={handleChangeMessage} value={data.message} placeholder={'your message...'}/>
       </form>
       <Button title={'Send'} onClick={handleSend} disabled={sendIsLoading} className={styles.button} />
