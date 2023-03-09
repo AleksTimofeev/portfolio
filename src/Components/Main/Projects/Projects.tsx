@@ -13,18 +13,17 @@ export type ProjectType = {
 const Projects = () => {
   const dataProjects: Array<ProjectType> = [
     {
-      title: 'Friday App',
+      title: 'Cards project',
       description: 'React, Redux, TypeScript, Redux-Thunk, React-Router-Dom, Jest, Axios.',
-      imgUrl: 'https://www.rd.com/wp-content/uploads/2018/12/50-Funny-Animal-Pictures-That-You-Need-In-Your-Life-2.jpg?fit=700,467',
-      projectUrl: 'https://alekstimofeev.github.io/friday-app/',
-      projectGithubUrl: 'https://github.com/AleksTimofeev/friday-app',
+      imgUrl: 'https://github.com/Bogagree/cards_project/raw/master/src/assets/img/app.jpg',
+      projectUrl: 'https://bogagree.github.io/cards_project/',
+      projectGithubUrl: 'https://github.com/Bogagree/cards_project',
     },
     {
       title: 'Todolist',
       description: 'React, Redux, TypeScript, Redux-Thunk, React-Router-Dom, Jest, Axios, Material UI.',
-      imgUrl: 'https://media.istockphoto.com/photos/photo-depicting-the-person-who-focuses-on-the-target-' +
-        'picture-id1249041775?b=1&k=20&m=1249041775&s=170667a&w=0&h=Pt6ltIPqpMrceX3FCtAEg69BjzrRJv4ZWh0n5rr3Uqs=',
-      projectUrl: 'https://github.com/AleksTimofeev/todolist',
+      imgUrl: 'https://github.com/AleksTimofeev/portfolio/blob/main/src/Assets/Image/todolistscreen.png?raw=true',
+      projectUrl: 'https://alekstimofeev.github.io/todolist',
       projectGithubUrl: 'https://github.com/AleksTimofeev/todolist',
     },
     {
