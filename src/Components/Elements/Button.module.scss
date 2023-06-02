@@ -28,4 +28,11 @@
     width: 100%;
     transition: .3s;
   }
+  &:disabled {
+    background: gray;
+    color: white;
+  }
+  &:disabled::after {
+    width: 0;
+  }
 }

@@ -7,9 +7,14 @@ type PropsType = {
   title: string
   onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
   className?: string
+  disabled?: boolean
 }
 
-const Button: React.FC<PropsType & DefaultButtonPropsType> = ({onClick, title, className, ...restProps}) => {
+const Button: React.FC<PropsType & DefaultButtonPropsType> = ({onClick,
+                                                                title,
+                                                                className,
+                                                                disabled,
+                                                                ...restProps}) => {
 
   const handleOnclick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
       onClick && onClick(e)
@@ -18,7 +23,7 @@ const Button: React.FC<PropsType & DefaultButtonPropsType> = ({onClick, title, c
   const style = `${styles.btn} ${className}`
 
   return (
-    <button className={style} onClick={handleOnclick} >{title}</button>
+    <button className={style} onClick={handleOnclick} disabled={disabled} >{title}</button>
   );
 };
 
